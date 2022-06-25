@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  /* main axis */
+  justify-content: space-around;
+  /* cross axis */
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background: blue;
+  width: 200px;
+  height: 200px;
+  color: white;
+}
