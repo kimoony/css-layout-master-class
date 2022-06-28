@@ -1,16 +1,36 @@
-.container {
+.father {
   display: flex;
-  flex-direction: row;
+  /* 기본방향 */
+  /* flex-direction: row; */
+  /* flex-direction: column-reverse; */
   /* main axis */
   justify-content: space-around;
+  align-content: flex-start;
   /* cross axis */
-  align-items: center;
-  height: 100vh;
+  /* align-items: center; */
+  height: 200vh;
+  /* flex-wrap: wrap; */
 }
 
-.box {
+.child {
   background: blue;
   width: 200px;
   height: 200px;
   color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* align-self / order */
+/* .child:nth-child(2) {
+  align-self: center;
+  order: 1;
+} */
+
+/* flex-gorw / flex- shrink */
+.child:nth-child(2) {
+  background: black;
+  flex-grow: 2;
 }
