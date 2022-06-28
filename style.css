@@ -2,20 +2,21 @@
   display: flex;
   /* 기본방향 */
   /* flex-direction: row; */
-  /* flex-direction: column-reverse; */
+  /* flex-direction: column; */
   /* main axis */
   justify-content: space-around;
   align-content: flex-start;
   /* cross axis */
   /* align-items: center; */
-  height: 200vh;
+  height: 100vh;
   /* flex-wrap: wrap; */
 }
 
 .child {
   background: blue;
-  width: 200px;
-  height: 200px;
+  flex-basis: 30%;
+  /* width: 200px; */
+  /* height: 200px; */
   color: white;
   font-size: 50px;
   display: flex;
@@ -30,7 +31,13 @@
 } */
 
 /* flex-gorw / flex- shrink */
-.child:nth-child(2) {
+/* .child:nth-child(2) {
   background: black;
   flex-grow: 2;
+} */
+
+/* flex-basis */
+.child:nth-child(2) {
+  background: black;
+  flex-grow: 1;
 }
