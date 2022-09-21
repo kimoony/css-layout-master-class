@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  /* grid-template-columns: repeat(4, 75px);
+  grid-template-rows: repeat(5, 62px); */
+  grid-auto-columns: 1fr;
+  gap: 12px 10px;
+  grid-template-areas:
+    "symbol symbol symbol oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper";
+}
+
+.symbol {
+  background-color: #6995ff;
+  color: #fff;
+  grid-area: symbol;
+}
+
+.digit {
+  background-color: #ff4d4f;
+  color: #fff;
+  grid-area: digit;
+}
+
+.oper {
+  background-color: #6ab49b;
+  color: #fff;
+  grid-area: oper;
+}
