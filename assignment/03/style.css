@@ -1,0 +1,85 @@
+body {
+  height: 140vh;
+  width: 100%;
+  background-color: #dde1d6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3);
+  gap: 20px;
+  grid-template-areas:
+    "header header header"
+    "bad bad bad-next"
+    "bad bad bad-next"
+    "religion religion religion";
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 200px 250px 150px 250px;
+  background-color: #000000;
+  color: #fff;
+  padding: 60px 10px 0 10px;
+}
+
+.hearder-content {
+}
+
+.bad {
+  grid-area: bad;
+  background-color: #f14011;
+  color: #000000;
+  padding: 0 10px;
+  display: grid;
+  gird-template-rows: 150px 150px 150px;
+  padding-bottom: -10px;
+}
+
+.bad-content {
+  font-size: 110px;
+  margin-bottom: 0px;
+}
+
+.bad-content:last-child {
+  font-size: 17rem;
+  font-weight: 900;
+  margin-bottom: -80px;
+  letter-spacing: -7px;
+}
+
+.bad-next {
+  grid-area: bad-next;
+  background-color: #f14011;
+}
+
+.religion {
+  background-color: #f14011;
+  color: #000000;
+  grid-area: religion;
+  padding: 0 10px;
+}
+
+.footer:first-child {
+  font-size: 17rem;
+  font-weight: 900;
+  margin-top: -15px;
+  letter-spacing: -7px;
+  margin-bottom: -30px;
+}
+
+.footer:nth-child(n + 2) {
+  color: #ffffff;
+  font-size: 3rem;
+  padding: 0 10px;
+}
+
+.footer:last-child {
+  margin-bottom: 50px;
+}
