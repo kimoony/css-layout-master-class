@@ -1,32 +1,46 @@
 .grid {
   display: grid;
-  /* grid-template-columns: repeat(4, 75px);
-  grid-template-rows: repeat(5, 62px); */
-  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  /* grid-auto-columns: 1fr; */
   gap: 12px 10px;
-  grid-template-areas:
-    "symbol symbol symbol oper"
-    "digit digit digit oper"
-    "digit digit digit oper"
-    "digit digit digit oper"
-    "digit digit digit oper"
-    "digit digit digit oper";
+  /* grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer"; */
 }
 
-.symbol {
+.header {
   background-color: #6995ff;
   color: #fff;
-  grid-area: symbol;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  /* grid-area: header; */
 }
 
-.digit {
+.content {
   background-color: #ff4d4f;
   color: #fff;
-  grid-area: digit;
+  /* grid-area: content; */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
-.oper {
+.nav {
   background-color: #6ab49b;
   color: #fff;
-  grid-area: oper;
+  /* grid-area: nav; */
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.footer {
+  background-color: #8e44ad;
+  color: #fff;
+  /* grid-area: footer; */
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
