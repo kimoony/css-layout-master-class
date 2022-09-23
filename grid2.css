@@ -1,0 +1,48 @@
+.grid {
+  display: grid;
+  gap: 12px 10px;
+  height: 50vh;
+  /* grid-template-columns: repeat(5, minmax(100px, 150px));
+  grid-template-rows: repeat(4, 100px); */
+  /* place-items: stretch end;
+  place-content: start center; */
+  /* 정해지지 않은 rows 자동으로 크기 맞춰줌 */
+  /* grid-auto-rows: 100px; */
+  /* grid-auto-flow: row; */
+}
+
+/* .header {
+  background-color: #6995ff;
+  color: #fff;
+}
+
+.content {
+  background-color: #ff4d4f;
+  color: #fff;
+}
+
+.nav {
+  background-color: #6ab49b;
+  color: #fff;
+  place-self: center end;
+}
+
+.footer {
+  background-color: #8e44ad;
+  color: #fff;
+} */
+
+.item:nth-child(odd) {
+  background-color: #8e44ad;
+}
+.item:nth-child(even) {
+  background-color: #6995ff;
+}
+
+.grid:first-child {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid:last-child {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
